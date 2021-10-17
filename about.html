@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Mr. Coffee</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    
+    </head>
+    
+        <body>
+    
+            <header>
+                <nav id="nav-links"> 
+                 <i class="fa fa-close" onclick="closeMenu()"></i>
+                     <ul>
+                         <li>
+                             <img class="nav-logo" src="Assets/full_logo_white.png" alt="Mr.Coffee-logo">
+                         </li>
+                         <li>
+                             <a href="home.html">home</a> 
+                         </li>
+                         <li>
+                             <a href="about.html">about</a> 
+                         </li>
+                         <li>
+                             <a href="contact.html">contact</a> 
+                         </li>
+                         
+                     </ul>
+                     
+                 </nav>
+                 <i class="fa fa-bars" onclick="showMenu()"></i>
+             </header>
+             
+     
+ 
+         <div id="logo-central">
+             <a href="" alt="Logo Mr Coffee">
+                 <img src="Assets/logo_mrcoffee.png" alt="">
+             </a>
+            
+         </div>
+ 
+         <div class="container-about">
+            
+            <div id="up-left">
+             
+             <h2>Chez Mr.Coffee, notre 
+                 <br>engagement commence <br>
+                  dans le café. </h2>
+             <p>
+                On ne pouvait pas offrir un espace de liberté d’expression et de partage sans penser à ce que l’on sert dans nos tasses.. 
+                <br> </p>
+                
+                <p>
+                Tout nos cafés viennent d’exploitations équitables : les agriculteurs bénéficient d’une rémunération juste pour leur labeur, les conditions de travail respectent les droits de l’Homme. 
+                <br></p>
+                
+                <p>
+                C’est ce qui rend nos cafés si bons : ils poussent, sont cultivés, cueillis, et séchés dans le respect et l’amour.</p>
+            </div>
+
+
+
+                <div id="up-right">
+                    <img src="Assets/trois_cafés.jpg" alt="">
+                </div>
+             
+         </div>
+
+         <div class="container-presque">
+            
+            <div id="bottom-right">
+             
+             <h2>Mr.Coffee, un café (presque)
+                <br> comme les autres. 
+                  </h2>
+             <p>
+                Ici, on vient pour retrouver quelqu’un, ou se retrouver avec soi, pour travailler sur son ordinateur ou se détendre, pour lire parmis les ouvrages de notre bibliothèque ou simplement apprécier un bon café. 
+                <br> </p>
+                
+                <p>
+                    Tout ce monde si différent qui se croise sans se voir, ça nous a donné envie de faire quelque chose en plus. 
+                <br></p>
+
+                <p>C’est comme cela que Mr.Coffee, le philosophe, est né.
+                </p>
+                
+                
+                <p>
+                    Notre ambition : réunir des gens de tous les horizons autour de sujets de société, de débats philosophiques, de leur passion commune pour l’écriture et les lettres.</p>
+            </div>
+
+
+
+                <div id="bottom-left">
+                    <img src="Assets/mrcoffee_salle2.jpg" alt="">
+                </div>
+             
+         </div>
+
+         <footer>
+            <div class="footer-logo">
+                <img src="Assets/logo_blanc.png" alt="">
+            </div>
+            
+            <div class="social-logo-footer">
+                <p>Suivez nous sur les réseaux sociaux!</p>
+                <ul>
+                    <li></li>
+                    <li><img src="Assets/logo_linkedin.png" alt=""></li>
+                    <li><img src="Assets/logo_twitter.png" alt=""></li>
+                    <li><img src="Assets/logo_facebook.png" alt=""></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+        </script>
+            
+    </body>
+
+
+
+</html>

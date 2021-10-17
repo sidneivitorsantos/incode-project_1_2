@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Mr. Coffee</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    
+    </head>
+    
+        <body>
+    
+            <header>
+                <nav id="nav-links"> 
+                 <i class="fa fa-close" onclick="closeMenu()"></i>
+                     <ul>
+                         <li>
+                             <img class="nav-logo" src="Assets/full_logo_white.png" alt="Mr.Coffee-logo">
+                         </li>
+                         <li>
+                             <a href="home.html">home</a> 
+                         </li>
+                         <li>
+                             <a href="about.html">about</a> 
+                         </li>
+                         <li>
+                             <a href="contact.html">contact</a> 
+                         </li>
+                         
+                     </ul>
+                     
+                 </nav>
+                 <i class="fa fa-bars" onclick="showMenu()"></i>
+             </header>
+             
+     
+ 
+         <div id="logo-central">
+             <a href="" alt="Logo Mr Coffee">
+                 <img src="Assets/logo_mrcoffee.png" alt="">
+             </a>
+            
+         </div>
+
+         <div class="form">
+
+            <h3>Dites nous tout !</h3>
+            <form id="form_contact" action="" method="post">
+                
+                <br>
+              
+                <label for="first_name">Nom *</label> <br>
+                    <input type="text" id="first_name" name="first_name">
+                    <br>
+
+                 <label for="surname">Prénom * </label> <br>
+                    <input type="text" id="surname" name="surname">
+                    <br>
+                
+                <label for="phone_number">Téléphone </label> <br>
+                     <input type="text" id="phone_number" name="phone_number">
+                     <br>
+
+                <label for="email">Adresse mail * </label> <br>
+                    <input type="text" id="email" name="email">
+                    <br>
+
+                <label for="message">Message</label> <br>
+                    <textarea placeholder="Tapez votre message ici" name="message" id="message" cols="30" rows="10"></textarea>
+                    <br>
+                    <br>
+                    
+                <button id="contact-submit" type="submit" onclick="openForm()" value="submit">Submit</button> 
+              
+            </form>
+
+            <div class="open-popup" id="popup">
+                <img src="Assets/logo_dark.png" alt="">
+
+                <div class="open-popup-text">  
+                    <h3>MERCI 
+                    <br>Votre message a bien été envoyé !
+                    </h3>
+                    <br>  
+                    <br> 
+    
+                    <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+
+                    <button id="close-popup" type="submit" onclick="closeForm()" value="submit">FERMER</button>
+                </div>
+
+                
+            
+            </div>
+      
+ 
+         <div class="container-contact">
+ 
+             
+             <h2>On vous attend !</h2>
+
+             <p><b> Mr.Coffee </b> <br>
+                15 place Jules Guesde <br>
+                75006 Paris 
+                </p>
+                
+                <br>
+
+                <p>Tel : +33 9 46 25 78 45 <br>
+                    Mail : contact@mr-coffee.com</p>
+                
+                
+
+             <img src="Assets/carte_contact.png" alt="Map-directions-Mr.Coffee">
+             
+         </div>
+
+         
+
+
+         <footer>
+            <div class="footer-logo">
+                <img src="Assets/logo_blanc.png" alt="">
+            </div>
+            
+            <div class="social-logo-footer">
+                <p>Suivez nous sur les réseaux sociaux!</p>
+                <ul>
+                    <li></li>
+                    <li><img src="Assets/logo_linkedin.png" alt=""></li>
+                    <li><img src="Assets/logo_twitter.png" alt=""></li>
+                    <li><img src="Assets/logo_facebook.png" alt=""></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+
+            function openForm() {
+            document.getElementById("popup").style.display = "flex";
+            }
+
+            function closeForm() {
+            document.getElementById("popup").style.display = "none";
+            }
+        </script>
+            
+    </body>
+
+
+
+</html>
