@@ -757,6 +757,8 @@ nav .fa{
         position: absolute;
         right: 30px;
         top: 20px;
+        display: block;
+        z-index: 100;
         
     }
 
@@ -769,6 +771,7 @@ nav .fa{
     }
 
     #nav-links{
+        display: none;
         height: 100vh;
         width: 200px;
         background-color: #000;
