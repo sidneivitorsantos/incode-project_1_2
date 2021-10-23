@@ -125,13 +125,28 @@
 
 
         <script>
-            var show = document.getElementById("nav-links");
+           var show = document.getElementById("nav-links");
             function showMenu(){
                 show.style.right = "0";
+                show.style.display = "block";
+
             }
             function closeMenu(){
                 show.style.right = "-200px";
+                show.style.display = "none";
             }
+
+            function openForm() {
+            document.getElementById("popup").style.display = "flex";
+            }
+
+            function closeForm() {
+            document.getElementById("popup").style.display = "none";
+            }
+
+            document.getElementById("contact-submit").addEventListener("click", function(event){
+            event.preventDefault()
+            });
         </script>
             
     </body>
